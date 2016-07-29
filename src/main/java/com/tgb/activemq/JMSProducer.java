@@ -19,7 +19,7 @@ import org.apache.activemq.ActiveMQConnectionFactory;
  */
 public class JMSProducer {
 
-	//默认连接用户名test
+	//默认连接用户名test1
 	private static final String USERNAME = ActiveMQConnection.DEFAULT_USER;
 	//默认连接密码
 	private static final String PASSWORD = ActiveMQConnection.DEFAULT_PASSWORD;
