@@ -6,14 +6,15 @@ import java.io.FileReader;
 import java.io.IOException;
 
 /**
- * Created by chensong on 2017/2/14.
+ * Created by yangyu on 2017/2/14.
  */
 
 
 public class Test1 {
     public static String processFile(BufferedReaderProcessor p) throws IOException{
-        BufferedReader br = new BufferedReader(new FileReader("/Users/chensong/Documents/data.txt"));
-        return p.process(br);
+        try(BufferedReader br = new BufferedReader(new FileReader("/Users/chensong/Documents/test.txt"))){
+            return p.process(br);
+        }
     }
 
     public static void main(String args[]) {
