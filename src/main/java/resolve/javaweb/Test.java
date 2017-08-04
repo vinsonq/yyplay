@@ -26,7 +26,7 @@ public class Test {
 
         System.out.println("----------------------自定义类加载器------------------------");
         PathClassLoader loader = new PathClassLoader("/Users/chensong/Documents/test");
-        Class<?> cl = Class.forName("play.Test", true, loader);
+        Class<?> cl = Class.forName("play.TestLocation", true, loader);
         Object obj = cl.newInstance();
         System.out.println(obj);
         System.out.println(obj.getClass().getClassLoader().getParent());
